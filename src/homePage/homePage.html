@@ -4,32 +4,38 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="../output.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/src/output.css" rel="stylesheet">
+    <script></script>
     <script src="/src/Navbar/navBar.js" defer></script>
 </head>
-<body>
-    <script>0</script>
-    <header class="bg-gray-900 sm:flex sm:justify-between sm:items-center sm:px-4 sm:py=2">
-        <div class="flex items-center justify-between px-4 py-3">
-            <div class="h-8 text-white">
-                INSERT LOGO HERE
+<body class="">
+    <header class="fixed w-full bg-transparent sm:flex sm:justify-between sm:items-center sm:border-b-2 sm:border-gray-400 sm:px-4 sm:py=2">
+        <div class="flex items-center justify-between px-4 border-b-2 border-gray-400 sm:border-b-0">
+            <div class="h-full px-2 text-white py-3 hover:drop-shadow-2xl">
+                <img class="h-12 rounded  lg:h-20" src="/src/photos/logo.png" alt="OPEN SOURCE">
             </div>
-            <div class="sm:hidden">
-                <button type="button" id="mobileNavButton" class="text-gray-400 hover:text-white p-0 m-0 leading-none">
-                    <svg class="h-full w-8 fill-current font-bold" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
-                        <path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"></path>
-                    </svg>
-                </button>
-            </div>
+            <button type="button" id="mobileNavButton" class="text-gray-400 hover:text-white p-0 m-0 leading-none sm:hidden">
+                <svg class="h-full w-8 fill-current font-bold" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                    <path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"></path>
+                </svg>
+            </button>
         </div>
-        <div id="mobileLinks" class="px-2 py-4 hidden sm:flex sm:items-center sm:py-0">
-            <a href="../linux.html" class="block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:ml-2">Linux</a>
-            <a href="#" class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2">TEMP</a>
-            <a href="#" class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2">TEMP</a>
-            <a href="#" class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2">TEMP</a>
-            <a href="#" class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2">TEMP</a>
+        <div id="mobileLinks" class="hidden transition-opacity px-2 py-2 sm:flex sm:items-center sm:py-0  md:text-xl lg:text-2xl">
+            <a href="../linux.html" class="duration-500 opacity-0 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:ml-2 sm:opacity-100">Linux</a>
+            <a href="#" class="opacity-0 mt-1 block px-2 py-1 duration-500 delay-100 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2 sm:opacity-100">TEMP</a>
+            <a href="#" class="opacity-0 mt-1 block px-2 py-1 duration-500 delay-200 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2 sm:opacity-100">TEMP</a>
+            <a href="#" class="opacity-0 mt-1 block px-2 py-1 duration-500 delay-300 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2 sm:opacity-100">TEMP</a>
+            <a href="#" class="opacity-0 mt-1 block px-2 py-1 duration-500 delay-[400ms] text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2 sm:opacity-100">TEMP</a>
         </div>
     </header>
+    <div class="h-screen flex items-end" style="background-image: url('/src/photos/mainPageBackground.png'); background-size: cover; background-position: right center;">
+        <div>
+
+        </div>
+    </div>
+    <div>
+        test
+    </div>
 </body>
 </html>
