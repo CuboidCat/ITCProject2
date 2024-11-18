@@ -2,18 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Open Source Projects</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/photos/logo.png">
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/src/output.css" rel="stylesheet">
     <script></script>
     <script src="/src/Navbar/navBar.js" defer></script>
 </head>
-<body class="">
-    <header class="fixed w-full bg-transparent sm:flex sm:justify-between sm:items-center sm:border-b-2 sm:border-gray-400 sm:px-4 sm:py=2">
+<body class="font-ser">
+    <header class="fixed w-full bg-gray-700 bg-opacity-50 sm:flex sm:justify-between sm:items-center sm:border-b-2 sm:border-gray-400 sm:px-4 sm:py=2">
         <div class="flex items-center justify-between px-4 border-b-2 border-gray-400 sm:border-b-0">
             <div class="h-full px-2 text-white py-3 hover:drop-shadow-2xl">
-                <img class="h-12 rounded  lg:h-20" src="/src/photos/logo.png" alt="OPEN SOURCE">
+                <a href="homePage.html">
+                <img class="h-12 rounded  lg:h-20" src="/src/photos/logo.png"  alt="OPEN SOURCE">
+                </a>
             </div>
             <button type="button" id="mobileNavButton" class="text-gray-400 hover:text-white p-0 m-0 leading-none sm:hidden">
                 <svg class="h-full w-8 fill-current font-bold" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
@@ -23,19 +26,150 @@
         </div>
         <div id="mobileLinks" class="hidden transition-opacity px-2 py-2 sm:flex sm:items-center sm:py-0  md:text-xl lg:text-2xl">
             <a href="../linux.html" class="duration-500 opacity-0 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:ml-2 sm:opacity-100">Linux</a>
-            <a href="#" class="opacity-0 mt-1 block px-2 py-1 duration-500 delay-100 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2 sm:opacity-100">TEMP</a>
-            <a href="#" class="opacity-0 mt-1 block px-2 py-1 duration-500 delay-200 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2 sm:opacity-100">TEMP</a>
-            <a href="#" class="opacity-0 mt-1 block px-2 py-1 duration-500 delay-300 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2 sm:opacity-100">TEMP</a>
-            <a href="#" class="opacity-0 mt-1 block px-2 py-1 duration-500 delay-[400ms] text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2 sm:opacity-100">TEMP</a>
+            <a href="../apache.html" class="opacity-0 mt-1 block px-2 py-1 duration-500 delay-100 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2 sm:opacity-100">Apache</a>
+            <a href="../git.html" class="opacity-0 mt-1 block px-2 py-1 duration-500 delay-200 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2 sm:opacity-100">Git</a>
+            <a href="../krita.html" class="opacity-0 mt-1 block px-2 py-1 duration-500 delay-300 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2 sm:opacity-100">Krita</a>
+            <a href="../licensing.html" class="opacity-0 mt-1 block px-2 py-1 duration-500 delay-[400ms] text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2 sm:opacity-100">Licensing</a>
+            <a href="../advantages.html" class="opacity-0 mt-1 block px-2 py-1 duration-500 delay-[400ms] text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2 sm:opacity-100">Advantages</a>
+            <a href="../contact.html" class="opacity-0 mt-1 block px-2 py-1 duration-500 delay-[400ms] text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2 sm:opacity-100">Contact</a>
         </div>
     </header>
-    <div class="h-screen flex items-end" style="background-image: url('/src/photos/mainPageBackground.png'); background-size: cover; background-position: right center;">
-        <div>
-
+    <div class="flex items-end justify-center bg-cover bg-right-center" style="height: calc(100vh - 50px); background-image: url('/src/photos/mainPageBackground.png'); background-position: 75% center;">
+        <div class="bg-gray-700 bg-opacity-50 p-5 m-10 rounded-lg">
+            <h1 class="text-white text-4xl sm:text-8xl font-bold">Open Source</h1>
         </div>
     </div>
-    <div>
-        test
+    <div class="flex items-center justify-center bg-gray-100">
+        <div class="pt-12 rounded-lg shadow-lg space-y-4 text-center w-full">
+            <p class="text-6xl font-bold text-orange-700">Open source projects fuel the industry!</p>
+            <p class="text-2xl w-2/3 mx-auto sm:text-4xl">
+                Open source projects are key to driving innovation in tech. By making software freely available and collaborative,
+                they lower costs, improve security, and accelerate development. Open source fuels progress across industries,
+                empowering developers to create better tools and solutions together.
+            </p>
+        </div>
     </div>
+    <div id="linux" class="max-w-screen-2xl mx-auto pt-20 p-6 lg:p-12">
+        <div class="lg:flex items-center">
+            <div class="flex justify-center lg:w-1/2">
+                <img src="/src/photos/linux.png" alt="Open Source Projects" class="rounded-lg shadow-lg">
+            </div>
+
+            <div class="lg:w-1/2 lg:pl-10 text-center lg:text-left">
+                <h1 class="text-4xl sm:text-5xl font-bold text-orange-700 pt-6 lg:pt-0">
+                    Linux
+                </h1>
+                <p class="text-lg sm:text-xl lg:text-2xl leading-relaxed pt-6 px-4 lg:px-0">
+                    Linux is an open-source operating system kernel that powers a wide range of devices, from smartphones to servers. Created by Linus Torvalds in 1991, it is developed collaboratively by a global community of developers. Linux is released under the GNU General Public License (GPL), which allows anyone to use, modify, and distribute the code. This open nature has fostered widespread adoption and innovation, making Linux a key component in many technology infrastructures, offering reliability, flexibility, and security for users and developers alike.                </p>
+                <div class="mt-8">
+                    <a href="#" class="inline-block px-6 py-3 text-lg sm:text-xl bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="apache" class="max-w-screen-2xl mx-auto p-6 lg:p-12">
+        <div class="lg:flex lg:flex-row-reverse items-center">
+            <div class="flex justify-center lg:w-1/2">
+                <img src="/src/photos/apache.jpg" alt="Open Source Projects" class="rounded-lg shadow-lg">
+            </div>
+            <div class="lg:w-1/2 lg:pr-10 text-center lg:text-left">
+                <h1 class="text-4xl sm:text-5xl font-bold text-orange-700 pt-6 lg:pt-0">
+                    Apache
+                </h1>
+                <p class="text-lg sm:text-xl lg:text-2xl leading-relaxed pt-6 px-4 lg:px-0">
+                    Apache is an open-source web server software that provides a reliable and scalable platform for hosting websites and applications. Developed by the Apache Software Foundation, it is licensed under the Apache License, which allows users to freely use, modify, and distribute the software. The Apache HTTP Server is known for its flexibility, security features, and strong community support, making it one of the most popular web servers in the world. Its open-source nature encourages continuous improvements, allowing developers to contribute and adapt it to meet various needs.                <div class="mt-8">
+                    <a href="#" class="inline-block px-6 py-3 text-lg sm:text-xl bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="git" class="max-w-screen-2xl mx-auto pt-20 p-6 lg:p-12">
+        <div class="lg:flex items-center">
+            <div class="flex justify-center lg:w-1/2">
+                <img src="/src/photos/Git.png" alt="Open Source Projects" class="rounded-lg shadow-lg">
+            </div>
+
+            <div class="lg:w-1/2 lg:pl-10 text-center lg:text-left">
+                <h1 class="text-4xl sm:text-5xl font-bold text-orange-700 pt-6 lg:pt-0">
+                    Git
+                </h1>
+                <p class="text-lg sm:text-xl lg:text-2xl leading-relaxed pt-6 px-4 lg:px-0">
+                    Git is an open-source version control system that allows developers to track changes in their code and collaborate on projects efficiently. Created by Linus Torvalds in 2005, Git is licensed under the GNU General Public License (GPL), enabling anyone to use, modify, and distribute the software. Git's distributed architecture allows multiple developers to work independently and merge their changes seamlessly, making it essential for managing large-scale software projects. Its open-source nature has contributed to its widespread adoption, with a large community continually enhancing its features and performance.                <div class="mt-8">
+                    <a href="#" class="inline-block px-6 py-3 text-lg sm:text-xl bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="krita" class="max-w-screen-2xl mx-auto p-6 lg:p-12">
+        <div class="lg:flex lg:flex-row-reverse items-center">
+            <div class="flex justify-center lg:w-1/2">
+                <img src="/src/photos/Krita.png" alt="Open Source Projects" class="rounded-lg shadow-lg">
+            </div>
+            <div class="lg:w-1/2 lg:pr-10 text-center lg:text-left">
+                <h1 class="text-4xl sm:text-5xl font-bold text-orange-700 pt-6 lg:pt-0">
+                    Krita
+                </h1>
+                <p class="text-lg sm:text-xl lg:text-2xl leading-relaxed pt-6 px-4 lg:px-0">
+                    Krita is an open-source digital painting software designed for artists, illustrators, and designers. Licensed under the GNU General Public License (GPL), Krita allows users to freely use, modify, and distribute the software. It offers a wide range of features, including advanced brush engines, customizable workspaces, and support for various file formats, making it a powerful tool for both professional and amateur artists. As an open-source project, Krita benefits from continuous community contributions, ensuring regular updates and improvements while fostering collaboration among artists worldwide.                <div class="mt-8">
+                    <a href="#" class="inline-block px-6 py-3 text-lg sm:text-xl bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="licensing" class="max-w-screen-2xl mx-auto pt-20 p-6 lg:p-12">
+        <div class="lg:flex items-center">
+            <div class="flex justify-center lg:w-1/2">
+                <img src="/src/photos/key.png" alt="Open Source Projects" class="rounded-lg shadow-lg">
+            </div>
+
+            <div class="lg:w-1/2 lg:pl-10 text-center lg:text-left">
+                <h1 class="text-4xl sm:text-5xl font-bold text-orange-700 pt-6 lg:pt-0">
+                    Licensing
+                </h1>
+                <p class="text-lg sm:text-xl lg:text-2xl leading-relaxed pt-6 px-4 lg:px-0">
+                    Open source project licenses determine how software can be used, modified, and shared. They protect the creators' rights while allowing others to contribute and benefit. Common licenses, like MIT, GPL, and Apache, set conditions on how code can be redistributed or adapted. Some require derivative works to be open source, while others allow use in proprietary software. These licenses promote collaboration and legal clarity in open source development.                </p>
+                <div class="mt-8">
+                    <a href="#" class="inline-block px-6 py-3 text-lg sm:text-xl bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="advantages" class="max-w-screen-2xl mx-auto p-6 lg:p-12">
+        <div class="lg:flex lg:flex-row-reverse items-center">
+            <div class="flex justify-center lg:w-1/2">
+                <img src="/src/photos/advantage.png" alt="Open Source Projects" class="rounded-lg shadow-lg">
+            </div>
+            <div class="lg:w-1/2 lg:pr-10 text-center lg:text-left">
+                <h1 class="text-4xl sm:text-5xl font-bold text-orange-700 pt-6 lg:pt-0">
+                    Advantages
+                </h1>
+                <p class="text-lg sm:text-xl lg:text-2xl leading-relaxed pt-6 px-4 lg:px-0">
+                    Open source projects offer many benefits, including collaboration and faster innovation through shared access to source code. They promote transparency, allowing users to verify security, and are often free, reducing costs. Open source also builds strong communities, ensuring reliable, up-to-date, and widely accessible software.
+                <div class="mt-8">
+                    <a href="#" class="inline-block px-6 py-3 text-lg sm:text-xl bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="flex justify-between bg-orange-600 p-10 pt-10 w-full align-middle text-white sm:text-2xl">
+        <div class="footerText">
+            <p>© 2024 Open Source Projects</p>
+        </div>
+        <div class="underline">
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </footer>
 </body>
 </html>
