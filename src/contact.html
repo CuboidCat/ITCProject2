@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/photos/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <script></script>
+    <script src="/src/Navbar/navBar.js" defer></script>
+</head>
+<body>
+<header class="fixed w-full bg-gray-700 bg-opacity-50 sm:flex sm:justify-between sm:items-center sm:border-b-2 sm:border-gray-400 sm:px-4 sm:py=2">
+    <div class="flex items-center justify-between px-4 border-b-2 border-gray-400 sm:border-b-0">
+        <div class="h-full px-2 text-white py-3 hover:drop-shadow-2xl">
+            <a href="homePage/homePage.html">
+                <img class="h-12 rounded  lg:h-20" src="/src/photos/logo.png"  alt="OPEN SOURCE">
+            </a>
+        </div>
+        <button type="button" id="mobileNavButton" class="text-gray-400 hover:text-white p-0 m-0 leading-none sm:hidden">
+            <svg class="h-full w-8 fill-current font-bold" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                <path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"></path>
+            </svg>
+        </button>
+    </div>
+    <div id="mobileLinks" class="hidden transition-opacity px-2 py-2 sm:flex sm:items-center sm:py-0  md:text-xl lg:text-2xl">
+        <a href="./linux.html" class="duration-500 opacity-0 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:ml-2 sm:opacity-100">Linux</a>
+        <a href="./apache.html" class="opacity-0 mt-1 block px-2 py-1 duration-500 delay-100 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2 sm:opacity-100">Apache</a>
+        <a href="./git.html" class="opacity-0 mt-1 block px-2 py-1 duration-500 delay-200 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2 sm:opacity-100">Git</a>
+        <a href="./krita.html" class="opacity-0 mt-1 block px-2 py-1 duration-500 delay-300 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2 sm:opacity-100">Krita</a>
+        <a href="./licensing.html" class="opacity-0 mt-1 block px-2 py-1 duration-500 delay-[400ms] text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2 sm:opacity-100">Licensing</a>
+        <a href="./advantages.html" class="opacity-0 mt-1 block px-2 py-1 duration-500 delay-[400ms] text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2 sm:opacity-100">Advantages</a>
+        <a href="./contact.html" class="opacity-0 mt-1 block px-2 py-1 duration-500 delay-[400ms] text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2 sm:opacity-100">Contact</a>
+    </div>
+</header>
+<main class="pt-52">
+    <div class="contentHead text-center mx-auto w-4/5">
+        <h1 class="text-4xl text-orange-600">Contact Us</h1>
+        <p class="text-lg mt-4">Please leave your feedback and contact information below:</p>
+    </div>
+    <form class="w-4/5 mx-auto py-8">
+        <label for="email" class="block text-lg mb-2">Email:</label>
+        <input type="email" id="email" name="email" required class="w-full p-3 border border-gray-300 rounded-md mb-6">
+
+        <label for="phone" class="block text-lg mb-2">Phone Number:</label>
+        <small class="block mb-2 text-sm">Format: 123-456-7890</small>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required class="w-full p-3 border border-gray-300 rounded-md mb-6">
+
+        <label for="feedback" class="block text-lg mb-2">Feedback:</label>
+        <textarea id="feedback" name="feedback" rows="4" class="w-full p-3 border border-gray-300 rounded-md mb-6" required></textarea>
+
+        <input type="submit" value="Submit" class="w-full py-3 bg-orange-600 text-white cursor-pointer rounded-md">
+    </form>
+    <section class="contentHead text-center mx-auto w-4/5 mt-12">
+        <h2 class="text-3xl text-orange-600">Contact Information</h2>
+        <p class="text-lg mt-4">Email: info@historyofprogramming.com</p>
+        <p class="text-lg mt-2">Phone Number: 123-456-7890</p>
+    </section>
+</main>
+
+
+<footer class="flex justify-between bg-orange-600 p-10 pt-10 mt-10 w-full align-middle text-white sm:text-2xl">
+    <div class="footerText">
+        <p>© 2024 Open Source Projects</p>
+    </div>
+    <div class="underline">
+        <a href="contact.html">Contact Us</a>
+    </div>
+</footer>
+</body>
+</html>

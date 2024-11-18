@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Krita</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/photos/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <script></script>
+    <script src="/src/Navbar/navBar.js" defer></script>
+</head>
+<body>
+<header class="fixed w-full bg-gray-700 bg-opacity-50 sm:flex sm:justify-between sm:items-center sm:border-b-2 sm:border-gray-400 sm:px-4 sm:py=2">
+    <div class="flex items-center justify-between px-4 border-b-2 border-gray-400 sm:border-b-0">
+        <div class="h-full px-2 text-white py-3 hover:drop-shadow-2xl">
+            <a href="homePage/homePage.html">
+                <img class="h-12 rounded  lg:h-20" src="/src/photos/logo.png"  alt="OPEN SOURCE">
+            </a>
+        </div>
+        <button type="button" id="mobileNavButton" class="text-gray-400 hover:text-white p-0 m-0 leading-none sm:hidden">
+            <svg class="h-full w-8 fill-current font-bold" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                <path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"></path>
+            </svg>
+        </button>
+    </div>
+    <div id="mobileLinks" class="hidden transition-opacity px-2 py-2 sm:flex sm:items-center sm:py-0  md:text-xl lg:text-2xl">
+        <a href="./linux.html" class="duration-500 opacity-0 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:ml-2 sm:opacity-100">Linux</a>
+        <a href="./apache.html" class="opacity-0 mt-1 block px-2 py-1 duration-500 delay-100 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2 sm:opacity-100">Apache</a>
+        <a href="./git.html" class="opacity-0 mt-1 block px-2 py-1 duration-500 delay-200 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2 sm:opacity-100">Git</a>
+        <a href="./krita.html" class="opacity-0 mt-1 block px-2 py-1 duration-500 delay-300 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2 sm:opacity-100">Krita</a>
+        <a href="./licensing.html" class="opacity-0 mt-1 block px-2 py-1 duration-500 delay-[400ms] text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2 sm:opacity-100">Licensing</a>
+        <a href="./advantages.html" class="opacity-0 mt-1 block px-2 py-1 duration-500 delay-[400ms] text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2 sm:opacity-100">Advantages</a>
+        <a href="./contact.html" class="opacity-0 mt-1 block px-2 py-1 duration-500 delay-[400ms] text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2 sm:opacity-100">Contact</a>
+    </div>
+</header>
+<div class="flex items-end justify-center bg-cover bg-right-center" style="height: calc(100vh - 50px); background-image: url('/src/photos/krita.jpeg'); background-position: 75% center;">
+    <div class="bg-gray-700 bg-opacity-50 p-5 m-10 rounded-lg">
+        <h1 class="text-white text-4xl sm:text-8xl font-bold">Krita</h1>
+    </div>
+</div>
+<main>
+    <div class="backgroundElement">
+    </div>
+    <h1 class="text-6xl text-center pt-20 text-orange-600">The History of Krita</h1>
+    <div class="hidden lg:block">
+        <table class="w-full border-collapse my-5 text-4xl">
+            <tr>
+                <td class="text-orange-600 p-10">1999</td>
+                <td>Krita was initially conceived as part of the KOffice suite of applications, developed by the KDE community.</td>
+            </tr>
+            <tr>
+                <td class="text-orange-600 p-10">2005</td>
+                <td>The first official release of Krita was made available, focused on digital painting, drawing, and concept art creation.</td>
+            </tr>
+            <tr>
+                <td class="text-orange-600 p-10">2009</td>
+                <td>Krita became a standalone application, no longer tied to the KOffice suite, and was released as open-source software under the GPL license.</td>
+            </tr>
+            <tr>
+                <td class="text-orange-600 p-10">2015</td>
+                <td>Krita's first major milestone, Krita 2.9, was released with improvements in usability, performance, and new features aimed at professional digital artists.</td>
+            </tr>
+            <tr>
+                <td class="text-orange-600 p-10">2020</td>
+                <td>Krita 4.2 was released, adding powerful tools for animation, improved brush engines, and enhanced support for digital painting workflows.</td>
+            </tr>
+        </table>
+        <p class="text-4xl ml-7 p-10">
+            Today, Krita is one of the most popular open-source digital painting tools, widely used by illustrators, concept artists, and animators. With its powerful features, extensive brush library, and professional-grade tools, Krita is a favorite in both the professional and hobbyist art communities.
+        </p>
+    </div>
+    <div class="lg:hidden">
+        <ul class="text-xl">
+            <li class="pt-10"><strong>1999:</strong> Krita was initially conceived as part of the KOffice suite of applications, developed by the KDE community.</li>
+            <li class="pt-5"><strong>2005:</strong> The first official release of Krita was made available, focused on digital painting, drawing, and concept art creation.</li>
+            <li class="pt-5"><strong>2009:</strong> Krita became a standalone application, no longer tied to the KOffice suite, and was released as open-source software under the GPL license.</li>
+            <li class="pt-5"><strong>2015:</strong> Krita's first major milestone, Krita 2.9, was released with improvements in usability, performance, and new features aimed at professional digital artists.</li>
+            <li class="pt-5"><strong>2020:</strong> Krita 4.2 was released, adding powerful tools for animation, improved brush engines, and enhanced support for digital painting workflows.</li>
+        </ul>
+        <p class="pt-5 text-2xl">Today, Krita is one of the most popular open-source digital painting tools, widely used by illustrators, concept artists, and animators. With its powerful features, extensive brush library, and professional-grade tools, Krita is a favorite in both the professional and hobbyist art communities.</p>
+    </div>
+</main>
+
+
+
+<footer class="flex justify-between bg-orange-600 p-10 pt-10 w-full align-middle text-white sm:text-2xl">
+    <div class="footerText">
+        <p>© 2024 Open Source Projects</p>
+    </div>
+    <div class="underline">
+        <a href="contact.html">Contact Us</a>
+    </div>
+</footer>
+</body>
+</html>

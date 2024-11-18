@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Licensing</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/photos/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <script></script>
+    <script src="/src/Navbar/navBar.js" defer></script>
+</head>
+<body>
+<header class="fixed w-full bg-gray-700 bg-opacity-50 sm:flex sm:justify-between sm:items-center sm:border-b-2 sm:border-gray-400 sm:px-4 sm:py=2">
+    <div class="flex items-center justify-between px-4 border-b-2 border-gray-400 sm:border-b-0">
+        <div class="h-full px-2 text-white py-3 hover:drop-shadow-2xl">
+            <a href="homePage/homePage.html">
+                <img class="h-12 rounded  lg:h-20" src="/src/photos/logo.png"  alt="OPEN SOURCE">
+            </a>
+        </div>
+        <button type="button" id="mobileNavButton" class="text-gray-400 hover:text-white p-0 m-0 leading-none sm:hidden">
+            <svg class="h-full w-8 fill-current font-bold" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                <path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"></path>
+            </svg>
+        </button>
+    </div>
+    <div id="mobileLinks" class="hidden transition-opacity px-2 py-2 sm:flex sm:items-center sm:py-0  md:text-xl lg:text-2xl">
+        <a href="./linux.html" class="duration-500 opacity-0 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:ml-2 sm:opacity-100">Linux</a>
+        <a href="./apache.html" class="opacity-0 mt-1 block px-2 py-1 duration-500 delay-100 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2 sm:opacity-100">Apache</a>
+        <a href="./git.html" class="opacity-0 mt-1 block px-2 py-1 duration-500 delay-200 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2 sm:opacity-100">Git</a>
+        <a href="./krita.html" class="opacity-0 mt-1 block px-2 py-1 duration-500 delay-300 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2 sm:opacity-100">Krita</a>
+        <a href="./licensing.html" class="opacity-0 mt-1 block px-2 py-1 duration-500 delay-[400ms] text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2 sm:opacity-100">Licensing</a>
+        <a href="./advantages.html" class="opacity-0 mt-1 block px-2 py-1 duration-500 delay-[400ms] text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2 sm:opacity-100">Advantages</a>
+        <a href="./contact.html" class="opacity-0 mt-1 block px-2 py-1 duration-500 delay-[400ms] text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2 sm:opacity-100">Contact</a>
+    </div>
+</header>
+<div class="flex items-end justify-center bg-cover bg-right-center" style="height: calc(100vh - 50px); background-image: url('/src/photos/licensing.jpg'); background-position: 75% center;">
+</div>
+<main>
+    <div id="startingOut" class="text-center py-20 px-16 max-w-5xl mx-auto">
+        <h1 class="text-4xl text-orange-600">Understanding Open Source Project Licensing</h1>
+        <p class="text-xl mt-6 sm:text-2xl">
+            Open source project licensing is an essential aspect of software development, determining how code can be used, modified, and distributed. When developers create software and choose to make it open source, they often attach a license to the project to clarify the terms and conditions for others.
+            These licenses serve to protect both the original creator’s rights and the interests of anyone who wishes to contribute to or use the project.
+            There are many different types of open-source licenses, ranging from permissive licenses like the MIT License, which allows for free use, modification, and distribution with minimal restrictions, to copyleft licenses like the GPL, which require derivative works to be released under the same license.
+            Understanding the implications of open-source licenses is crucial for both developers and users, as it ensures compliance with legal requirements while fostering collaboration and innovation within the open-source community.
+        </p>
+    </div>
+
+
+
+
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 grid-rows-2 gap-12 p-5 mt-5 mx-5 sm:mx-24">
+        <div class="border border-black p-5 text-xl">
+            <h1 class="text-orange-600">MIT License</h1>
+            <p>The MIT License is a permissive open-source license that allows users to do almost anything with the code, including modification, distribution, and private use. The only requirement is that the original copyright and license notice must be included in any distributed software or documentation. It’s one of the most widely used and flexible open-source licenses.</p>
+        </div>
+        <div class="border border-black p-5 text-xl">
+            <h1 class="text-orange-600">GPL (General Public License)</h1>
+            <p>The GNU General Public License (GPL) is a copyleft license that requires derivative works to be released under the same license. This means that any software that uses GPL-licensed code must also be open-source if distributed. It’s designed to protect the freedom of software users and contributors by ensuring that improvements and modifications are shared with the community.</p>
+        </div>
+        <div class="border border-black p-5 text-xl">
+            <h1 class="text-orange-600">Apache License 2.0</h1>
+            <p>The Apache License 2.0 is a permissive license that allows for modification, distribution, and private use. Unlike the MIT License, the Apache License includes an explicit grant of patent rights from contributors to users, preventing contributors from later claiming patent infringement. It’s often used by large organizations and projects, such as those maintained by the Apache Software Foundation.</p>
+        </div>
+        <div class="border border-black p-5 text-xl">
+            <h1 class="text-orange-600">BSD License</h1>
+            <p>The BSD License is another permissive open-source license that allows users to modify and distribute code. There are various versions, but the most common are the 2-Clause and 3-Clause BSD licenses. The 3-Clause BSD License includes a non-endorsement clause, meaning that the names of the original authors cannot be used to promote derivative works without written permission.</p>
+        </div>
+    </div>
+    <div class="block pt-[100px] text-center text-xl items-center">
+        <h1 class="text-4xl text-orange-600">Want to learn more?</h1>
+        <video controls poster="osVideo.mp4" class="w-full h-auto">
+            <source src="osVideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p class="">This video was downloaded from Youtube by creator "Pro Tech Show"</p>
+        <div class="flex justify-center items-center h-auto text-sm">
+            <p>Original Video:  </p><a href="https://www.youtube.com/watch?v=nFU8KoSgEmk" class="text-blue-500 hover:underline">Link to Video</a>
+        </div>
+    </div>
+
+
+</main>
+
+
+
+<footer class="flex justify-between bg-orange-600 p-10 pt-10 w-full align-middle text-white sm:text-2xl">
+    <div class="footerText">
+        <p>© 2024 Open Source Projects</p>
+    </div>
+    <div class="underline">
+        <a href="contact.html">Contact Us</a>
+    </div>
+</footer>
+</body>
+</html>
